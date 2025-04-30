@@ -6,8 +6,10 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class Player {
-    private String name ;
     private int id ;
+    private String name ;
     private Team team ;
 }
