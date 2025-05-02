@@ -1,15 +1,14 @@
-package org.me.learning.graphql.service;
+package org.me.learning.graphql.OldService;
 
 
-import org.me.learning.graphql.model.Player;
-import org.me.learning.graphql.model.Team;
+import org.me.learning.graphql.OldModel.Player;
+import org.me.learning.graphql.OldModel.Team;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
 public class PlayerService {

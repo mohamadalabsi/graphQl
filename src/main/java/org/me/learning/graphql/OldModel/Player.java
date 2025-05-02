@@ -1,4 +1,4 @@
-package org.me.learning.graphql.model;
+package org.me.learning.graphql.OldModel;
 
 
 import lombok.*;
