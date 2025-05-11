@@ -26,7 +26,7 @@ public class PlayerService {
 
     public Optional<Player> findOne(Integer id) {
         return players.stream().filter(player -> player.getId() == id).findFirst();
-//         .or else return neu player , but without optional
+//         .or else return neu player or null, but without optional
     }
 
 

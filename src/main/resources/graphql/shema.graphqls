@@ -1,0 +1,15 @@
+
+# this is what the client are able to query from our service
+type Query {
+
+    books : [Book]
+    bookById(id:Int ): Book
+
+}
+
+type Book {
+#    there is ID data Type in graphQl it is for id , it is like int but for id
+    id: ID ,
+    name :String,
+    pages:Int
+}
