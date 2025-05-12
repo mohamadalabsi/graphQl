@@ -1,9 +1,11 @@
 package org.me.learning.graphql.newController;
 
 
+import org.me.learning.graphql.newModel.Author;
 import org.me.learning.graphql.newModel.Book;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Controller;
 
 import java.util.List;
@@ -25,4 +27,10 @@ public class BookController {
     public Optional<Book> bookById (@Argument int id){
         return Book.getById(id);
     }
+
+    @SchemaMapping
+    public Optional<Author> author ( Book book){ // no args here
+        return Author.getById(book.id());   // static method will be called using a class name not a object from class
+    }
+//    now here we have two classes connected to each other so we have to do something different
 }

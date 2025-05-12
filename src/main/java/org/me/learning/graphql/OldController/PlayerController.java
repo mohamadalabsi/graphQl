@@ -33,7 +33,7 @@ public class PlayerController {
 //          return player1.getId();
 //         now if we have lets say a backend for a big project and this backend connected to android , apple and web application
 //        like this example when i want to return players it will return player (all attributes ), and the filter it and display ,  what we want  what if i want for android just the name and image and not the id
-//        i have to make other method for just android , cuz here it does not work in the same method and sometimes more than one method if i want to return specific thing or use the same method for all and then filter them in the frontend
+//        i have to make other method for just android , cuz here it does not work in the same method and sometimes more than one method if i want to return specific thing or use the same method for all and then filter them in the frontend or send multiple request which is bad
 //        so we use graph ql for this , with it we can return specific things for each client
 
 

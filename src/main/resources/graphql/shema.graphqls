@@ -1,8 +1,8 @@
 
-# this is what the client are able to query from our service
+# this is what the client are able to query from our service and what we use in controller
 type Query {
 
-    books : [Book]
+    books : [Book]  # list of books
     bookById(id:Int ): Book
 
 }
@@ -12,4 +12,12 @@ type Book {
     id: ID ,
     name :String,
     pages:Int
+    author : Author
+}
+
+# relation between book and author
+
+type Author {
+    id :ID ,
+    name :String
 }
