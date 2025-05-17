@@ -1,0 +1,15 @@
+# in this file we can have our queries which we use within our test
+query books {
+
+    books {
+
+        id
+        name
+        pages
+        author {
+            id
+            name
+        }
+
+    }
+}
